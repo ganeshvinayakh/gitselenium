@@ -1,0 +1,25 @@
+package Petplan;
+
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class LoginPage extends Base
+{
+	@Test
+	public void Launchur1  () throws Exception
+	
+	{
+		driver.get("https://www.petplan.co.uk/existing-customers/track-your-claim/");
+	System.out.println("Website launched");
+	driver.manage().deleteAllCookies();
+	driver.findElement(By.className("button focusedLink")).click();
+	//driver.findElement(By.className("btn btn-quote")).click();
+	//driver.findElement(By.id("ACCEPT ALL")).click();
+	//System.out.println("accepted");
+	//driver.quit();
+			}}
+
+
